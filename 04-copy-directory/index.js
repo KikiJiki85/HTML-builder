@@ -19,5 +19,5 @@ async function copyDirectory(source, destination) {
 }
 
 copyDirectory(folderPath, folderCopyPath)
-  .then(() => console.log('Copying finished successefuly'))
+  .then(() => console.log('Copying finished successfully'))
   .catch(console.error);
