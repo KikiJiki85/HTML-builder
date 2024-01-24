@@ -9,7 +9,7 @@ stdout.write('*** Welcome, please enter text: ***\n');
 
 stdin.on('data', (data) => {
   const someText = String(data).trim();
-  if (someText.indexOf('exit') === -1) writeStream.write(data);
+  if (someText !== 'exit') writeStream.write(data);
   else forceExit();
 });
 
